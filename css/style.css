@@ -1,8 +1,15 @@
+:root{
+  --white-color:#fff;
+  --accent-color: #DE2E54;
+  --main-color:#0EB4C1;
+}
+
+
 *{
   box-sizing: border-box;
 }
 *:focus{
-  outline: 2px dashed #0EB4C1;
+  outline: 2px dashed var(--main-color);
   outline-offset: 4px;
 }
 body{
@@ -25,7 +32,7 @@ body{
 /* header */
 
 header{
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 .site-header-container{
   display: flex;
@@ -52,7 +59,7 @@ header{
   opacity 0.4s ease;
 }
 .header-logo:hover{
-  color:#DE2E54;
+  color:var(--accent-color);
 }
 .header-img{
   margin-right: 16px;
@@ -81,32 +88,32 @@ header{
   border-radius: 8px;
 }
 .link:hover{
-  color: #DE2E54;
+  color: var(--accent-color);
 }
 .link:active{
   opacity: 0.6;
 }
 .main-link{
   font-size: 15px;
-  background: #DE2E54;
-  color: #fff;
+  background: var(--accent-color);
+  color: var(--white-color);
   border: 2px solid transparent;
   padding: 10px 22px;
 }
 .main-link:hover{
-  color: #DE2E54;
-  background-color: #fff;
-  border-color: #DE2E54
+  color: var(--accent-color);
+  background-color: var(--white-color);
+  border-color: var(--accent-color)
 }
 .main-link:active{
-  background-color: #DE2E54;
-  color: #fff;
+  background-color: var(--accent-color);
+  color: var(--white-color);
   opacity: 0.6;
 }
 
 /* main */
 .hero{
-  background-color: #0EB4C1;;
+  background-color: var(--main-color);
 }
 .hero-container{
   display: flex;
@@ -123,13 +130,13 @@ header{
   line-height: 1.2;
 }
 .hero-title{
-  color: #FFFFFF;
+  color: var(--white-color);
   margin-top: 0;
   font-size: 36px;
   margin-bottom: 16px;
 }
 .hero-text{
-  color: #FFFFFF;
+  color: var(--white-color);
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 36px;
@@ -140,7 +147,7 @@ header{
 
 
 .services{
-  background-color: #FFFFFF;
+  background-color: var(--white-color)FFF;
 }
 .services-container{
   padding: 120px 118px;
@@ -161,6 +168,7 @@ header{
 }
 .services-list-item img{
   margin-right: 64px;
+  /* box-shadow: 0 12px 24px 8px; */
 }
 .about-services{
   max-width: 600px;
@@ -180,7 +188,10 @@ header{
 
 
 .registration{
-  background-color:  #0EB4C1;
+  background-color:var(--main-color);
+}
+.registration-link{
+  background-color:transparent;
 }
 .registration-container{
   padding: 64px 0 ;
@@ -194,21 +205,21 @@ header{
   gap: 40px;
 }
 .registration-link{
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--white-color);
   padding: 10px 22px;
   transition: color 0.4s ease,
   opacity 0.4s ease;
 }
 .registration-link:hover{
-  background-color: #DE2E54;
-  border: 2px solid #DE2E54;
-  color: #fff;
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: var(--white-color);
 }
 .registration-link:active{
   opacity: 0.6;
 }
 .registration-title{
-  color: #fff;
+  color: var(--white-color);
   font-size: 36px;
   margin-top: 0;
   margin-bottom: 40px;
@@ -225,11 +236,11 @@ footer{
   padding: 24px 0;
 }
 .footer{
-  color: #fff;
+  color: var(--white-color);
   transition: color 0.4s ease,
   opacity 0.4s ease;
 }
 .footer:active{
-  color: #fff;
+  color: var(--white-color);
   opacity: 0.6;
 }
